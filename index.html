@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster - Premium To-Do List</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>My Day</h1>
+            <p id="date-display">Today</p>
+        </header>
+
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="What needs to be done?">
+            <button id="add-btn" aria-label="Add Task">
+                <span class="icon">➕</span>
+            </button>
+        </div>
+
+        <ul id="task-list">
+            <!-- Tasks will be injected here -->
+        </ul>
+        
+        <div class="empty-state" id="empty-state">
+            <div class="emoji">📝</div>
+            <p>No tasks yet. Add one above!</p>
+        </div>
+        
+        <footer>
+            <span id="pending-count">0 tasks pending</span>
+            <button id="clear-all" class="text-btn">Clear All</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
